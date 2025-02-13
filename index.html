@@ -4,83 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valentine's Day Invitation</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #ffcccc;
-            font-family: "Arial", sans-serif;
-            text-align: center;
-        }
+		<style>
+			body {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					height: 100vh;
+					background-color: #ffcccc;
+					font-family: "Arial", sans-serif;
+					text-align: center;
+					padding: 20px;
+			}
 
-        .invitation {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: #ff007f;
-            text-shadow: 0 0 10px #ff007f, 0 0 20px #ff66a3, 0 0 30px #ff99c2;
-            animation: blink 1.5s infinite alternate;
-        }
+			.invitation {
+					font-size: 4rem; /* BIGGER TEXT */
+					font-weight: bold;
+					color: #ff007f;
+					text-shadow: 0 0 15px #ff007f, 0 0 25px #ff66a3, 0 0 35px #ff99c2;
+					animation: blink 1.5s infinite alternate;
+			}
 
-        @keyframes blink {
-            0% { opacity: 1; text-shadow: 0 0 20px #ff007f; }
-            50% { opacity: 0.5; text-shadow: 0 0 30px #ff66a3; }
-            100% { opacity: 1; text-shadow: 0 0 20px #ff007f; }
-        }
+			@keyframes blink {
+					0% { opacity: 1; text-shadow: 0 0 30px #ff007f; }
+					50% { opacity: 0.6; text-shadow: 0 0 40px #ff66a3; }
+					100% { opacity: 1; text-shadow: 0 0 30px #ff007f; }
+			}
 
-        .question {
-            font-size: 1.8rem;
-            margin-top: 20px;
-            color: #d1005c;
-            font-weight: bold;
-        }
+			.question {
+					font-size: 3rem; /* BIGGER TEXT */
+					margin-top: 30px;
+					color: #d1005c;
+					font-weight: bold;
+			}
 
-        .buttons {
-            margin-top: 20px;
-        }
+			.buttons {
+					margin-top: 30px;
+			}
 
-        button {
-            font-size: 1.5rem;
-            padding: 10px 20px;
-            margin: 10px;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            font-weight: bold;
-            transition: 0.3s;
-        }
+			button {
+					font-size: 2rem; /* BIGGER BUTTON TEXT */
+					padding: 15px 30px;
+					margin: 15px;
+					border: none;
+					border-radius: 15px;
+					cursor: pointer;
+					font-weight: bold;
+					transition: 0.3s;
+			}
 
-        .yes {
-            background-color: #ff007f;
-            color: white;
-            box-shadow: 0 0 10px #ff007f;
-        }
+			.yes {
+					background-color: #ff007f;
+					color: white;
+					box-shadow: 0 0 15px #ff007f;
+			}
 
-        .no {
-            background-color: #ddd;
-            color: black;
-        }
+			.no {
+					background-color: #ddd;
+					color: black;
+			}
 
-        .yes:hover {
-            background-color: #d1005c;
-            box-shadow: 0 0 15px #d1005c;
-        }
+			.yes:hover {
+					background-color: #d1005c;
+					box-shadow: 0 0 20px #d1005c;
+			}
 
-        .no:hover {
-            background-color: #bbb;
-        }
+			.no:hover {
+					background-color: #bbb;
+			}
 
-        .response {
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: #ff007f;
-            margin-top: 20px;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
-        }
-    </style>
+			.response {
+					font-size: 3rem; /* BIGGER RESPONSE TEXT */
+					font-weight: bold;
+					color: #ff007f;
+					margin-top: 30px;
+					opacity: 0;
+					transition: opacity 0.5s ease-in-out;
+			}
+	</style>
     <script>
         function respond(answer) {
             const responseText = document.getElementById("response");
